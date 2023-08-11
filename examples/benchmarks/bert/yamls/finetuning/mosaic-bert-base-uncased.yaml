@@ -64,6 +64,7 @@ seed: 17
 device_eval_batch_size: 16
 device_train_microbatch_size: 16
 precision: amp_bf16
+# precision: amp_fp16
 
 # Logging
 progress_bar: false
@@ -71,8 +72,8 @@ log_to_console: true
 console_log_interval: 10ba
 
 # Optionally log to W&B
-# loggers:
-#   wandb: {}
+loggers:
+  wandb: {}
 
 callbacks:
   speed_monitor:
